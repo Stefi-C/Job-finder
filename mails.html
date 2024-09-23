@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inbox - Job Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+   
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .inbox-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #f4f4f4;
+        }
+
+        table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .email-actions {
+            text-align: right;
+            margin: 1rem 0;
+        }
+
+        .email-actions button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .email-actions button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">JobFinder</div>
+        <div class="menu">
+            <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/find.html">Find a Job</a></li>
+            <li><a href="/post.html">Post a Job</a></li>
+            <li><a href="/saved.html">Saved</a></li>
+            <li><a href="/mails.html">Mail</a></li>
+            <li class="sign-up"><a href="#">Sing up/Log in</a></li>
+        
+            </ul>
+        </div>
+    </nav>
+    <div class="inbox-container">
+        <h1 class="banners-h1">All Received Mails</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sender</th>
+                    <th>Subject</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>hiring@techcorp.com</td>
+                    <td>Your Application for Front-End Developer</td>
+                    <td>Sep 22, 2024</td>
+                    <td><button><a href="/opened-mail.html">View</a></button></td>
+                </tr>
+                <tr>
+                    <td>recruit@softsolutions.com</td>
+                    <td>Interview Invitation for Back-End Developer</td>
+                    <td>Sep 21, 2024</td>
+                    <td><button><a href="/opened-mail.html">View</a></button></td>
+                </tr>
+                <tr>
+                    <td>info@webworks.com</td>
+                    <td>Job Offer for Full-Stack Developer</td>
+                    <td>Sep 20, 2024</td>
+                    <td><button><a href="/opened-mail.html">View</a></button></td>
+                </tr>
+                <tr>
+                    <td>careers@designco.com</td>
+                    <td>Design Portfolio Review Feedback</td>
+                    <td>Sep 18, 2024</td>
+                    <td><button><a href="/opened-mail.html">View</a></button></td>
+                </tr>
+                <tr>
+                    <td>jobs@innovatetech.com</td>
+                    <td>Project Manager Application Received</td>
+                    <td>Sep 15, 2024</td>
+                    <td><button><a href="/opened-mail.html">View</a></button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="email-actions">
+            <button>Mark All as Read</button>
+            <button>Delete Selected</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Job Finder. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
