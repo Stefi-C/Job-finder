@@ -17,7 +17,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 li{
     list-style: none;
@@ -77,6 +76,7 @@ a{
     background: #041e9e;
 }
 .banners-h1{
+    width: 100%;
     font-size: 45px;
     color: var(--white);
     text-shadow: var(--text-shadow);
@@ -227,6 +227,8 @@ button{
     background-repeat: repeat;
     height: 100%;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-emphasis: center;
@@ -235,7 +237,7 @@ button{
 
 
 
-
+/*find-a-job*/
 
 .main-find{
     display: flex;
@@ -340,7 +342,7 @@ hr{
 }
 
 
-
+/*post-a-job*/
 
 .post-content{
     display: flex;
@@ -382,12 +384,15 @@ textarea {
 
 
 
-
+/*saved*/
 
     .saved-jobs-content{
         display: flex;
         width: 100%;
-        border: 1px solid black;
+        box-shadow: 2px 2px 5px #222;
+        background: #002d9f81;
+        color: var(--white);
+        text-shadow: 1px 1px 1px #222;   
     }
 
     .job-listings{
@@ -434,7 +439,7 @@ textarea {
 
 
   
-   
+   /*opened-mail*/
 
     .p {
         color: 222;
@@ -453,14 +458,31 @@ textarea {
     .job-details p {
         margin: 5px 0;
     }
+    .mail{
+        box-shadow: 2px 2px 5px #222;
+        margin: 50px;
+        padding: 40px;
+        background: #002d9f81;
+        color: #fff;
+        text-shadow: 1px 1px 1px #222;
+        font-weight: 200;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
     .mail-message{
-        height: 150px;
+        margin: 10px;
+        padding: 10px;
+        height: auto;
+        min-height: 150px;
+        box-shadow: inset -1px 1px 5px #222;
+        background: #e9eef5;
+        color: #222;
+        text-shadow: none;
     }
     .btn {
         display: inline-block;
         padding: 10px 20px;
         background-color: var(--blue);
-        color: white;
+        color: var(--white);
         text-decoration: none;
         border-radius: 5px;
     }
@@ -469,18 +491,26 @@ textarea {
         background-color: var(--violet);
     }
 
-
+/*mails*/
 
     table {
         width: 100%;
         height: 70vh;
         border-collapse: collapse;
+        background: #002d9f81;
+        padding: 30px;
+        margin: 50px;
+        box-shadow: 2px 2px 5px #222;
+        width: 93%;
+        align-self: center;
+        color: var(--white);
+        text-shadow: 1px 1px 1px #222;
     }
 
     table th, table td {
         text-align: left;
         padding: 10px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #222;
     }
 
     table th {
@@ -506,12 +536,28 @@ textarea {
     .email-actions button:hover {
         background-color: var(--violet);
     }
+    .mails-btn{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    }
+    .mails-btn a{
+        color: var(--white);
+    }
+    .mails-btn:hover {
+    background-color: var(--violet);
+    }
 
 
 
 
-
-
+/*signup-login*/
 
    .s-content{
     display: flex;
@@ -569,7 +615,7 @@ textarea {
 
 
 
-
+/*footer*/
     footer {
         margin-top: 2rem;
         text-align: center;
