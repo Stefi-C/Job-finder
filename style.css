@@ -81,7 +81,7 @@ a{
     color: var(--white);
     text-shadow: var(--text-shadow);
     font-family: var(--arvo);
-    margin: 20px;
+    margin: 20px 10px;
     padding: 10px;
     box-shadow: 0px 2px 15px 5px #000000;
     border-radius: 5px;
@@ -130,12 +130,12 @@ form{
     border-radius: 5px;
     color: var(--white);
     width: 450px;
-    height: 280px;
+    height: 300px;
     
 }
 form h2{
     font-family: var(--kameron);
-    font-size: 35px;
+    font-size: 25px;
     padding: 10px;
     text-shadow: var(--text-shadow);
 
